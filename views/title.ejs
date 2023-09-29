@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Phone Number</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url("https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(230, 136, 223);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            background-color: white;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mov {
+            color: #060708;
+            font-family: Arial, sans-serif;
+        }
+
+        .mov1 {
+            color: rgb(207, 145, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="mov">Is_valid: <span class="mov1"><%= is_valid %></span></h3>
+        <h3 class="mov">Is_formatted_properly: <span class="mov1"><%= is_formatted_properly %></span></h3>
+        <h3 class="mov">Country: <span class="mov1"><%= country %></span></h3>
+        <h3 class="mov">Location: <span class="mov1"><%= location %></span></h3>
+        <h3 class="mov">Timezones : <span class="mov1"><%= timezones %></span></h3>
+        <h3 class="mov">Format_national : <span class="mov1"><%= format_national %></span></h3>
+        <h3 class="mov">Format_international: <span class="mov1"><%= format_international %></span></h3>
+        <h3 class="mov">Format_e164 : <span class="mov1"><%= format_e164 %></span></h3>
+        <h3 class="mov">Country_code : <span class="mov1"><%= country_code %></span></h3>
+    </div>
+</body>
+</html>

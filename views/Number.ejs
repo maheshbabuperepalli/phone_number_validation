@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validate Phone</title>
+    <style>
+        body {
+            background-image: url("https://www.nicepng.com/png/full/372-3720306_we-verify-all-phone-numbers-and-emails-of.png");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .form-group {
+            margin: 20px auto;
+            max-width: 300px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><strong>Validate Your Mobile Number</strong></h1>
+        <form action="/numbersubmit" method="get">
+            <div class="form-group">
+                <input type="text" name="number" placeholder="Enter Your Number">
+            </div>
+            <button type="submit" class="btn btn-primary">Enter</button>
+        </form>
+    </div>
+</body>
+
+</html>
